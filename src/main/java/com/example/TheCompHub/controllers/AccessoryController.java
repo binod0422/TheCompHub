@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping("/api/accessory")
+@CrossOrigin
 public class AccessoryController {
 
     private final AccessoryService accessoryService;
