@@ -21,16 +21,19 @@ public class Accessory {
     //    @Column(name ="id", nullable = false, updatable = false )
     private String description;
 
-//    public Player(Integer id) {
-//        this.id = id;
-//    }
+    private String category;
 
-//    public Player(String name, Integer age, Double yearsOfExperience, Double rating) {
-//        this.name = name;
-//        this.age = age;
-//        this.yearsOfExperience = yearsOfExperience;
-//        this.rating = rating;
-//    }
+    public Accessory(Integer id) {
+        this.id = id;
+    }
+
+    public Accessory(String name, String image, Double price, String description, String category) {
+        this.name = name;
+        this.image = image;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+    }
 
     public Integer getId() {
         return id;
@@ -70,5 +73,14 @@ public class Accessory {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

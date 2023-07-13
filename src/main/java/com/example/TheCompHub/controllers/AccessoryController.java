@@ -11,7 +11,7 @@ import java.net.URI;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping("/accessory")
+@RequestMapping("/api/accessory")
 public class AccessoryController {
 
     private final AccessoryService accessoryService;
