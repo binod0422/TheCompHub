@@ -1,20 +1,19 @@
 package com.example.TheCompHub.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
-
+    @Column(length = 500)
     String image;
 
     String name;
+    @Column(length = 500)
     String description;
+
 
     Integer price;
 
