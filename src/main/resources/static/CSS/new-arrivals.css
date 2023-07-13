@@ -1,0 +1,52 @@
+/* NAV BAR */
+/* "COMP CONNECTION HUB" font */
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+/* "COMP CONNECTION HUB" font */
+
+#logo{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 200%;
+}
+#comp-connection{
+    color:#0077B6;
+}
+#hub{
+   color: #03045E; 
+}
+#nav-links{
+    margin-left:auto;
+    margin-right: auto;
+}
+.nav-link:hover{
+    color:#0077B6
+}
+.navbar{
+    padding: 1em; 
+    font-size: 1em; 
+}
+/* END NAV BAR */
+
+h1{
+    color: #03045E; 
+    letter-spacing: 1px;  
+    font-size: 3em; 
+}
+
+#btn{
+    background-color: #03045E;
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    padding: 20px;
+    line-height: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding shadow */
+}
+    
+.footer{
+    background-color: #03045E;
+    margin-top: 100px;
+    text-align: center;
+}

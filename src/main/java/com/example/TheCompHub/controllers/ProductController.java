@@ -7,12 +7,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.HashMap;
 import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 @CrossOrigin
 public class ProductController {
     @Autowired
@@ -43,6 +43,23 @@ public class ProductController {
     public ResponseEntity<Product> addUser(@RequestBody Product product) {
         Product addProduct = productService.addProduct(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(addProduct);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Product>  updatedPlayer(@PathVariable Integer id, @RequestBody Product updates){
+        return ResponseEntity.ok(productService.updateProduct(id, updates));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<HashMap<String, Object>> deleteProduct(@PathVariable Integer id){
+
+        HashMap<String, Object> responseMap = productService.deleteProduct(id);
+
+        if(responseMap.get("productInfo") == null){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(responseMap);
+        }
+
+        return ResponseEntity.ok(responseMap);
     }
 
 
