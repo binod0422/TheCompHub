@@ -23,8 +23,8 @@ public class Accessory {
 
     private String category;
 
-    public Accessory(Integer id) {
-        this.id = id;
+    public Accessory() {
+
     }
 
     public Accessory(String name, String image, Double price, String description, String category) {

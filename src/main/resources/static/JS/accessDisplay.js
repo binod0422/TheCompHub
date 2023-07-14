@@ -2,7 +2,7 @@ const productsContainer = document.getElementById('accessory');
 const productURL = "http://localhost:8080/api/accessory";
 
 
-async function generateProductCards() {
+async function generateAccessoryCards() {
   try {
     const response = await fetch(accessoryURL);
     if (response.ok) {
