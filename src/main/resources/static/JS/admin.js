@@ -39,49 +39,11 @@ productForm.addEventListener("submit", async function (event) {
 
     if (response.ok) {
       console.log("Product added successfully");
-       //getProducts(url); // Fetch the updated list of products or best sellers after adding a new product
     } else {
       throw new Error("Unable to add product: " + response.status);
     }
   } catch (error) {
     console.error("Error: " + error);
   }
-
   productForm.reset();
 });
-
-
-
-//Displaying underneath the page which takes lots of space on the bottom so i commented this section
-//const getProducts = async (url) => {
-//  try {
-//    const response = await fetch(url);
-//    if (response.ok) {
-//      const data = await response.json();
-//      console.log(data);
-//      displayProducts(data);
-//    } else {
-//      throw new Error("Unable to get products");
-//    }
-//  } catch (error) {
-//    console.log("Error: " + error);
-//  }
-//};
-//
-//const displayProducts = function (products) {
-//  productRows.innerHTML = "";
-//  products.forEach((product) => {
-//    let row = document.createElement("tr");
-//    row.setAttribute("data-id", product.id);
-//    row.innerHTML = `
-//      <td><img src="${product.image}" alt="Product Image"></td>
-//      <td>${product.name}</td>
-//      <td>${product.description}</td>
-//      <td>${product.price}</td>
-//      <td>${product.category}</td>
-//    `;
-//    productRows.appendChild(row);
-//  });
-//};
-//
-//getProducts(productURL);

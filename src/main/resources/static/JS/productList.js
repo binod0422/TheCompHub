@@ -136,19 +136,19 @@ let moreProducts = [
     {
         "name": "Dell",
         "image": "/images/dell3.jpg",
-        "description": "Latitude 7430 14" Laptop (Latest Latitude 2023) Intel 12th Gen Core i7-1265U(10-Core) 512GB SSD 16GB RAM Full HD (1920x1080) Windows 11 PRO",
+        "description": "Latitude 7430 14\" Laptop (Latest Latitude 2023) Intel 12th Gen Core i7-1265U(10-Core) 512GB SSD 16GB RAM Full HD (1920x1080) Windows 11 PRO",
         "price": 1029
     },
     {
         "name": "Lenovo",
         "image": "/images/ideapadslip9.jpg",
-        "description": "IdeaPad Slim 9 9i Pro 14ITL5 14" 4K UHD Touchscreen (Intel 4-Core i7-1195G7, 16GB RAM, 2TB PCIe SSD) Business Laptop, Backlit, Fingerprint, 2 x Thunderbolt 4, IR-Webcam, Windows 11 Pro",
+        "description": "IdeaPad Slim 9 9i Pro 14ITL5 14\" 4K UHD Touchscreen (Intel 4-Core i7-1195G7, 16GB RAM, 2TB PCIe SSD) Business Laptop, Backlit, Fingerprint, 2 x Thunderbolt 4, IR-Webcam, Windows 11 Pro",
         "price": 1099
     },
     {
         "name": "Asus",
         "image": "/images/asusvivobook15.jpg",
-        "description": "VivoBook 15 Laptop Computer, 15.6" FHD Display, AMD Ryzen 5 4600H Hexa-core Up to 4.0 GHz, 16GB RAM DDR4, 512GB PCIe SSD, Blacklit, Fingerprint, Webcam, Type-C, Win11 Pro",
+        "description": "VivoBook 15 Laptop Computer, 15.6\" FHD Display, AMD Ryzen 5 4600H Hexa-core Up to 4.0 GHz, 16GB RAM DDR4, 512GB PCIe SSD, Blacklit, Fingerprint, Webcam, Type-C, Win11 Pro",
         "price": 529
     }
 ];
