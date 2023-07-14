@@ -2,6 +2,7 @@ package com.example.TheCompHub.controllers;
 
 import com.example.TheCompHub.entities.Accessory;
 import com.example.TheCompHub.services.AccessoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 @CrossOrigin
 public class AccessoryController {
 
+    @Autowired
     private final AccessoryService accessoryService;
 
     public AccessoryController(AccessoryService accessoryService) {
@@ -22,8 +24,8 @@ public class AccessoryController {
     }
 
     @GetMapping
-    public ResponseEntity<Iterable<Accessory>> findAllAccessory(){
-        return ResponseEntity.ok(accessoryService.findAllAccessory());
+    public ResponseEntity<Iterable<Accessory>> getAccessory(){
+        return ResponseEntity.ok(accessoryService.getAccessory());
     }
 
     @GetMapping("/{id}")
@@ -33,14 +35,15 @@ public class AccessoryController {
 
     @PostMapping("/add")
     public ResponseEntity<Accessory> addAccessory(@RequestBody Accessory accessory){
-        Accessory savedAccessory = accessoryService.addAccessory(accessory);
+        Accessory addAccessory = accessoryService.addAccessory(accessory);
+//        Accessory savedAccessory = accessoryService.addAccessory(accessory);
 
-        URI location = ServletUriComponentsBuilder.fromCurrentContextPath()
-                .path("/accessory/{id}")
-                .buildAndExpand(savedAccessory.getId())
-                .toUri();
+//        URI location = ServletUriComponentsBuilder.fromCurrentContextPath()
+//                .path("/accessory/{id}")
+//                .buildAndExpand(savedAccessory.getId())
+//                .toUri();
 
-        return ResponseEntity.created(location).body(accessory);
+        return ResponseEntity.status(HttpStatus.CREATED).body(addAccessory);
     }
 
     @PutMapping("/{id}")
@@ -53,7 +56,7 @@ public class AccessoryController {
 
         HashMap<String, Object> responseMap = accessoryService.deleteAccessory(id);
 
-        if(responseMap.get("playerInfo") == null){
+        if(responseMap.get("accessoryInfo") == null){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(responseMap);
         }
 

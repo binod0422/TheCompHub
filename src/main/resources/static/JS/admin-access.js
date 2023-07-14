@@ -1,6 +1,6 @@
-const accessoryFormForm = document.getElementById("accessoryForm");
+const accessoryForm = document.getElementById("accessoryForm");
 const accessoryRows = document.getElementById("accessoryRows");
-const accessoryURL = "http://localhost:8080/api/accessory"; 
+const accessoryURL = "http://localhost:8080/accessory";
 
 accessoryForm.addEventListener("submit", async function(event) {
   event.preventDefault();
@@ -69,4 +69,4 @@ const displayAccessory = function(accessory) {
   });
 };
 
-getAccessory(); 
+getAccessory();
