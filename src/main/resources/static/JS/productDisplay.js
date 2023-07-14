@@ -116,9 +116,7 @@ async function generateProductCards() {
     if (response.ok) {
       const productArr = await response.json();
       console.log(productArr);
-
       productArr.forEach((product) => {
-        if (product.category === "Products") {
           const card = document.createElement('div');
           card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'col-xl-3', 'pb-3');
 
@@ -147,8 +145,6 @@ async function generateProductCards() {
           card.innerHTML = cardContent;
           // Append the card to the products container
           productsContainer.append(card);
-        }
-
       });
     } else {
       throw new Error("Unable to get products");
