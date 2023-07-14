@@ -3,7 +3,7 @@ package com.example.TheCompHub.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class Product {
+public class BestSellers {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
@@ -14,15 +14,14 @@ public class Product {
     @Column(length = 500)
     String description;
 
-
     Integer price;
 
     String category;
 
-    public Product() {
+    public BestSellers() {
     }
 
-    public Product(Integer id, String name, String image, String description, Integer price, String category) {
+    public BestSellers(Integer id, String name, String image, String description, Integer price, String category) {
         this.id = id;
         this.name = name;
         this.image = image;
