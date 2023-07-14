@@ -148,7 +148,6 @@ async function generateProductCards() {
           // Append the card to the products container
           productsContainer.append(card);
         }
-
       });
     } else {
       throw new Error("Unable to get products");
