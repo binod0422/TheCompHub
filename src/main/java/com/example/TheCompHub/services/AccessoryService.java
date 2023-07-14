@@ -17,7 +17,7 @@ public class AccessoryService {
         this.accessoryRepository = accessoryRepository;
     }
 
-    public Iterable<Accessory> findAllAccessory() {
+    public Iterable<Accessory> getAccessory() {
         return accessoryRepository.findAll();
     }
 

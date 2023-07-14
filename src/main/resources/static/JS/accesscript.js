@@ -1,4 +1,4 @@
-const products = [
+const accessory = [
     {
         name: 'Macbook Pro Charger',
         image: 'https://m.media-amazon.com/images/I/51ldiGHC0JL._AC_SX679_.jpg',
