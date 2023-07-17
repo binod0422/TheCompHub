@@ -27,7 +27,7 @@ public class NewArrivalsController {
 
     @GetMapping("/{id}")
     public ResponseEntity<NewArrivals> getNewArrivalsById(@PathVariable Integer id){
-        return ResponseEntity.ok(newArrivalsService.getAccessoryById(id));
+        return ResponseEntity.ok(newArrivalsService.getNewArrivalsById(id));
     }
 
     @PostMapping("/add")
