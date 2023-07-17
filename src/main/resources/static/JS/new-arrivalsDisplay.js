@@ -1,23 +1,20 @@
 const newArrivalsContainer = document.getElementById('new-arrivals');
 const newArrivalsURL = "http://localhost:8080/api/newarrivals";
 
-
-async function generateNewArrivalsCards() {
+async function generateNewArrivalCards() {
   try {
     const response = await fetch(newArrivalsURL);
     if (response.ok) {
-      const newArrivalsArr = await response.json();
-      console.log(newArrivalArr);
-
-      newArrivalsArr.forEach((product) => {
-        if (newArrivals.category === "New Arrivals) {
+      const productArr = await response.json();
+      console.log(productArr);
+      productArr.forEach((product) => {
           const card = document.createElement('div');
           card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'col-xl-3', 'pb-3');
 
           // Define the card's content using template literals
           const cardContent = `
             <div class='card'>
-                <img src='${newArrivals.image}' class='card-img-top' alt='card-img-top'>
+                <img src='${product.image}' class='card-img-top' alt='card-img-top'>
                 <div class='card-body d-flex flex-column justify-content-between'>
                     <div>
                         <h5 class='card-title fw-bold'>${product.name}</h5>
@@ -39,8 +36,6 @@ async function generateNewArrivalsCards() {
           card.innerHTML = cardContent;
           // Append the card to the products container
           newArrivalsContainer.append(card);
-        }
-
       });
     } else {
       throw new Error("Unable to get products");
@@ -50,4 +45,6 @@ async function generateNewArrivalsCards() {
   }
 }
 
-generateNewArrivalsCards();
+generateNewArrivalCards();
+
+

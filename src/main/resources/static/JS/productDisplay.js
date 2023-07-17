@@ -107,8 +107,8 @@
 // generateProductCards();
 
 const productsContainer = document.getElementById('products');
-const productURL = "http://localhost:8080/api/products";
-
+//const productURL = "http://localhost:8080/api/products";
+const productURL = "/api/products";
 
 async function generateProductCards() {
   try {

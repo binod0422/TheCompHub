@@ -11,7 +11,7 @@ import java.net.URI;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping("/newarrivals")
+@RequestMapping("/api/newarrivals")
 public class NewArrivalsController {
 
     private final NewArrivalsService newArrivalsService;
