@@ -1,7 +1,7 @@
 package com.example.TheCompHub.repositories;
 
-import org.springframework.stereotype.Repository;
+import com.example.TheCompHub.entities.NewArrivals;
+import org.springframework.data.repository.CrudRepository;
 
-@Repository
-public class NewArrivalsRepository {
+public interface NewArrivalsRepository extends CrudRepository<NewArrivals, Integer> {
 }
