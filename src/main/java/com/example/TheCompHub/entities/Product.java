@@ -13,10 +13,7 @@ public class Product {
     String name;
     @Column(length = 500)
     String description;
-
-
     Integer price;
-
     String category;
 
     public Product() {

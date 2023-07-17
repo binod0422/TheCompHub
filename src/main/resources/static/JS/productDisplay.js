@@ -123,7 +123,7 @@ async function generateProductCards() {
           // Define the card's content using template literals
           const cardContent = `
             <div class='card'>
-                <img src='${product.image}' class='card-img-top' alt='card-img-top'>
+                <img src=${product.image} class='card-img-top' alt='card-img-top'>
                 <div class='card-body d-flex flex-column justify-content-between'>
                     <div>
                         <h5 class='card-title fw-bold'>${product.name}</h5>
