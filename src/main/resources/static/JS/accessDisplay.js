@@ -1,5 +1,5 @@
-const productsContainer = document.getElementById('accessory');
-const productURL = "http://localhost:8080/api/accessory";
+const accessoryContainer = document.getElementById('accessory');
+const accessoryURL = "http://localhost:8080/api/accessory";
 
 
 async function generateAccessoryCards() {
