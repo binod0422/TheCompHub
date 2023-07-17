@@ -1,7 +1,9 @@
 const productForm = document.getElementById("productForm");
 const productRows = document.getElementById("productRows");
-const productURL = "http://localhost:8080/api/products";
-const bestSellersURL = "http://localhost:8080/api/bestSellers";
+//const productURL = "http://localhost:8080/api/products";
+//const bestSellersURL = "http://localhost:8080/api/bestSellers";
+const productURL = "api/products";
+const bestSellersURL = "api/bestSellersURL";
 
 productForm.addEventListener("submit", async function (event) {
   event.preventDefault();
