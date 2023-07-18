@@ -4,19 +4,21 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name="Accessory")
+//@Table(name="Accessory")
 public class Accessory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column( nullable = false, updatable = false )
+
     private Integer id;
 
-    @Column( nullable = false )
+
+
+    @Column( length = 500 )
     private String name;
     //    @Column(name ="id", nullable = false, updatable = false )
     private String image;
 
-    @Column(name ="Price" )
+    @Column(length = 500 )
     private Double price;
     //    @Column(name ="id", nullable = false, updatable = false )
     private String description;
