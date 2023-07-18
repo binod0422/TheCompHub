@@ -8,7 +8,4 @@ public class TheCompHubApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TheCompHubApplication.class, args);
 	}
-
 }
-
-

@@ -55,4 +55,8 @@ public class ViewController {
     public String bestsellers() {
         return "html/bestsellers";
     }
+    @GetMapping("/loginform")
+    public String loginform() {
+        return "html/loginform";
+    }
 }

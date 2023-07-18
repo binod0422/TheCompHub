@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+/* "COMP CONNECTION HUB" font */
+
+#logo {
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 200%;
+}
+
+#comp-connection {
+    color: #0077B6;
+}
+
+#hub {
+    color: #03045E;
+}
+
+#nav-links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link:hover {
+    color: #0077B6
+}
+
+.navbar{
+    padding: 1em; 
+    font-size: 1em; 
+}
+
+/* END NAV BAR */
+
+
+/* form styles */ 
+.card-body {
+  width: 100%; 
+  color: white; 
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #03045E;
+}
+
+.login-form h5 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.login-form form .mb-3 {
+  margin-bottom: 15px;
+}
+
+.login-form form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-form form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.login-form form button:hover {
+  background-color: #0062cc;
+}
+
+.signup, .underline {
+  text-decoration: underline;
+  color:#00B4D8 ;
+  cursor: pointer;
+}
+
+/* end of form styles */ 
+
+
