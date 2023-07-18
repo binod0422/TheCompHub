@@ -33,7 +33,7 @@ public class AccessoryController {
         return ResponseEntity.ok(accessoryService.getAccessoryById(id));
     }
 
-    @PostMapping("/add")
+    @PostMapping
     public ResponseEntity<Accessory> addAccessory(@RequestBody Accessory accessory){
         Accessory addAccessory = accessoryService.addAccessory(accessory);
 //        Accessory savedAccessory = accessoryService.addAccessory(accessory);
