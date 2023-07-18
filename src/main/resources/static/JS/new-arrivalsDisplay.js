@@ -1,5 +1,6 @@
 const newArrivalsContainer = document.getElementById('new-arrivals');
-const newArrivalsURL = "http://localhost:8080/api/newarrivals";
+//const newArrivalsURL = "http://localhost:8080/api/newarrivals";
+const newArrivalsURL = "api/newarrivals";
 
 async function generateNewArrivalCards() {
   try {
