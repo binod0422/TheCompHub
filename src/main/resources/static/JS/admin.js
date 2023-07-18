@@ -7,7 +7,7 @@ const productRows = document.getElementById("productRows");
 //const accessoryURL = "http://localhost:8080/api/accessory";
 const productURL = "api/products";
 const bestSellersURL = "api/bestSellers";
-const newArrivalsURL = "api/new-arrivals/add";
+const newArrivalsURL = "api/newarrivals/add";
 const accessoryURL = "api/accessory";
 
 
