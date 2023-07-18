@@ -5,10 +5,11 @@ const productRows = document.getElementById("productRows");
 //const bestSellersURL = "http://localhost:8080/api/bestSellers";
 //const newArrivalsURL = "http://localhost:8080/api/newarrivals/add";
 //const accessoryURL = "http://localhost:8080/api/accessory";
-const productURL = "api/products";
-const bestSellersURL = "api/bestSellers";
-const newArrivalsURL = "api/newarrivals/add";
-const accessoryURL = "api/accessory";
+
+const productURL = "/api/products";
+const bestSellersURL = "/api/bestSellers";
+const newArrivalsURL = "/api/newarrivals/add";
+const accessoryURL = "/api/accessory";
 
 
 productForm.addEventListener("submit", async function (event) {
