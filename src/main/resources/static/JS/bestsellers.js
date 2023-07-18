@@ -2,8 +2,7 @@ const additionalOptions = document.getElementById('moreProducts');
 //const bestSellersURL = "http://localhost:8080/api/bestSellers";
 //const productURL = "http://localhost:8080/api/products";
 const productURL = "/api/products";
-const bestSellersURL = "/api/bestSellersURL";
-
+const bestSellersURL = "/api/bestSellers";
 
 
 const getBestSellers = async () => {
