@@ -1,12 +1,15 @@
 const productForm = document.getElementById("productForm");
 const productRows = document.getElementById("productRows");
 
-//const productURL = "http://localhost:8080/api/products";
-//const bestSellersURL = "http://localhost:8080/api/bestSellers";
-//const newArrivalsURL = "http://localhost:8080/api/newarrivals";
-const productURL = "api/products";
-const bestSellersURL = "api/bestSellersURL";
-const newArrivalsURL = "api/new-arrivals";
+const productURL = "http://localhost:8080/api/products";
+const bestSellersURL = "http://localhost:8080/api/bestSellers";
+const newArrivalsURL = "http://localhost:8080/api/newarrivals/add";
+const accessoryURL = "http://localhost:8080/api/accessory";
+//const productURL = "api/products";
+//const bestSellersURL = "api/bestSellersURL";
+//const newArrivalsURL = "api/new-arrivals";
+//const accessoryURL = "api/accessory";
+
 
 productForm.addEventListener("submit", async function (event) {
   event.preventDefault();
@@ -32,7 +35,11 @@ productForm.addEventListener("submit", async function (event) {
       url = bestSellersURL;
     } else if (product.category === "Newarrivals") {
       url = newArrivalsURL;
-    } else {
+    }
+    else if (product.category === "accessory"){
+    url = accessoryURL;
+    }
+    else {
       throw new Error("Invalid product category");
     }
 
