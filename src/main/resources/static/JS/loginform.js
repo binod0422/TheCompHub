@@ -1,4 +1,5 @@
-const loginURL = 'http://localhost:8080/api/form';
+//const loginURL = 'http://localhost:8080/api/form';
+const loginURL = "/api/form"
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('loginForm');
