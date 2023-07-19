@@ -52,16 +52,16 @@ public class AccessoryController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<HashMap<String, Object>> deleteAccessory(@PathVariable Integer id){
-
+    public ResponseEntity<HashMap<String, Object>> deleteAccessory(@PathVariable Integer id) {
         HashMap<String, Object> responseMap = accessoryService.deleteAccessory(id);
 
-        if(responseMap.get("accessoryInfo") == null){
+        if (responseMap.get("accessoryInfo") == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(responseMap);
         }
 
         return ResponseEntity.ok(responseMap);
     }
+
 
 
 
