@@ -1,5 +1,5 @@
-//const loginURL = 'http://localhost:8080/api/form';
-const loginURL = "/api/form"
+const loginURL = 'http://localhost:8080/api/form';
+// const loginURL = "/api/form"
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('loginForm');
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Form submitted successfully');
         console.log(formData);
         form.reset(); // Reset the form
+        alert('Your account was created successfully'); // Display feedback message using alert
       } else {
         console.error('Request failed. Status: ' + response.status);
       }
