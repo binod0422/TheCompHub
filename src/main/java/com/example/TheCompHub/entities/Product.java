@@ -7,9 +7,8 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
-    @Column(length = 500)
+    @Column(columnDefinition = "LONGTEXT")
     String image;
-
     String name;
     @Column(length = 500)
     String description;

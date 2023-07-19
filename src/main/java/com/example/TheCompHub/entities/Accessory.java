@@ -13,12 +13,12 @@ public class Accessory {
 
 
 
-    @Column( length = 500 )
+
     private String name;
-    //    @Column(name ="id", nullable = false, updatable = false )
+
+    @Column(columnDefinition = "LONGTEXT")
     private String image;
 
-    @Column(length = 500 )
     private Double price;
     //    @Column(name ="id", nullable = false, updatable = false )
     private String description;

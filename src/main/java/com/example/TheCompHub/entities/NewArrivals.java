@@ -1,16 +1,13 @@
 package com.example.TheCompHub.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class NewArrivals {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
-
+    @Column(columnDefinition = "LONGTEXT")
     String image;
 
     String name;
